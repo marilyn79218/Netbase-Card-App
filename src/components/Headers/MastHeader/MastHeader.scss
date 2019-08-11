@@ -1,0 +1,35 @@
+@import '../../../common/styles/theme.scss';
+
+.mastheader {
+  display: flex;
+  align-items: center;
+  background: #084B8A;
+  width: 100%;
+  height: 30px;
+}
+
+.mastheadText {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: map-get($item-size, width);
+  height: map-get($item-size, height);
+  overflow: hidden;
+}
+
+.questionMark {
+  width: map-get($icon-theme, width);
+  height: map-get($icon-theme, height);
+  transform: scale(1.5);
+
+  &:hover {
+    cursor: pointer;
+  }
+}

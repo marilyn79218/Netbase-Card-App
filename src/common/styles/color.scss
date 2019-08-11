@@ -1,0 +1,15 @@
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+// Theme color
+$header-text-color: white;
+$header-theme-color: tint(black, 40%);
+
+// Table color
+$header-line-color: tint(gray, 30%);
+$bar-bg-color: tint(black, 40%);
+$bar-value-color: #fcf003;

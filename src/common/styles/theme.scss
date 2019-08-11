@@ -1,0 +1,13 @@
+@import './color.scss';
+
+$icon-theme: (
+  width: 20px,
+  height: 20px,
+  background: $header-theme-color,
+  color: $header-text-color,
+);
+
+$item-size: (
+  width: 40px,
+  height: 30px
+);

@@ -1,0 +1,12 @@
+$card-spec: (
+  width: 400px,
+  height: 300px,
+);
+
+.card {
+  width: map-get($card-spec, width);
+  height: map-get($card-spec, height);
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}

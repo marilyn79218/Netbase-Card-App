@@ -1,0 +1,60 @@
+@import '../../common/styles/color.scss';
+
+.tableContainer {
+  flex-grow: 1;
+  overflow-y: scroll;
+  width: 100%;
+  display: block;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.header {
+  border-bottom: 3px solid $header-line-color;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.cell {
+  display: inline-block;
+}
+
+.title {
+  width: 20%;
+  text-align: left;
+}
+
+.middle {
+  width: 50%;
+  text-align: center;
+}
+
+.count {
+  width: 30%;
+  text-align: right;
+}
+
+.bar {
+  width: 50%;
+  height: 20px;
+  background: $bar-bg-color;
+  position: relative;
+}
+
+.barValue {
+  height: 100%;
+  background: $bar-value-color;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.barText {
+  position: absolute;
+  right: 10px;
+}

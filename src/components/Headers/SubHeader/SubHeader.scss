@@ -1,0 +1,62 @@
+@import '../../../common/styles/color.scss';
+@import '../../../common/styles/theme.scss';
+
+.root {
+  width: 100%;
+  height: map-get($item-size, height);
+  display: flex;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background: $header-theme-color;
+}
+
+.icon {
+  width: map-get($icon-theme, width);
+  height: map-get($icon-theme, height);
+
+}
+
+.item {
+  width: map-get($item-size, width);
+  height: map-get($item-size, height);
+  line-height: map-get($item-size, height);
+}
+
+.navItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: map-get($icon-theme, background);
+  color: map-get($icon-theme, color);
+  text-align: center;
+  font-weight: bold;
+
+  &:link {
+    text-decoration: none;
+  }
+}
+
+.itemChecked {
+  background: map-get($icon-theme, color);
+  color: map-get($icon-theme, background);
+}
+
+.hideBtn {
+  width: 15%;
+  font-weight: bold;
+  background: $header-theme-color;
+  color: $header-text-color;
+  border: none;
+  border-left: 1px solid $header-text-color;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

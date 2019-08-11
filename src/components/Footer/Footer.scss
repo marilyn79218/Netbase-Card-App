@@ -1,0 +1,12 @@
+@import '../../common/styles/color.scss';
+
+.footer {
+  height: 50px;
+  text-align: center;
+  background: $header-theme-color;;
+  color: $header-text-color;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
