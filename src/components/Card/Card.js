@@ -24,11 +24,13 @@ const CardContent = () => (
 class Card extends React.Component {
   render() {
     return (
-      <div className="card">
-        <MastHeader />
-        <SubHeader />
-        <CardContent />
-        <Footer />
+      <div className="pageContainer">
+        <div className="card">
+          <MastHeader />
+          <SubHeader />
+          <CardContent />
+          <Footer />
+        </div>
       </div>
     );
   }

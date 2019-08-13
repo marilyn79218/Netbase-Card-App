@@ -3,6 +3,14 @@ $card-spec: (
   height: 300px,
 );
 
+.pageContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .card {
   width: map-get($card-spec, width);
   height: map-get($card-spec, height);
